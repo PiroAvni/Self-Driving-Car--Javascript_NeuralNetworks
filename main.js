@@ -79,8 +79,7 @@ function animate(time){
     }
    
     bestCar=cars.find(
-        c=>c.y==Math.min(
-            ...cars.map(c=>c.y)
+        c=>c.y==Math.min(...cars.map(c=>c.y)
         ));
     
     // resize the canvas
@@ -111,7 +110,7 @@ function animate(time){
 
     networkCtx.lineDashOffset=-time/50;
     Visualizer.drawNetwork(networkCtx,bestCar.brain);
-    // call the animate method again and again to give an illusion of movement 
+    // call the animate method again and again to give an illusion of road/ ai car moving 
     requestAnimationFrame(animate);
 }
 
