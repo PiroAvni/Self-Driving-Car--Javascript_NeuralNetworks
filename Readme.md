@@ -15,3 +15,20 @@ Neural networks can adapt to changing input; so the network generates the best p
 Example of Neural Network
 
 ![image](https://user-images.githubusercontent.com/90833537/213179209-abd164a6-6840-4843-ab03-627aa2e2f3b3.png)
+
+
+In our case we developed our very own neural network that allows us to train the network to identify of objects and to eventually self drive. 
+
+
+![image](https://user-images.githubusercontent.com/90833537/213181354-f4cbe077-bd5f-4fe8-94eb-ee33ba7917ea.png)
+
+The neurons in the first layout are connected to the sensors, they will send the signal forward to the second layer and the last layer will be connected to the car controls to make do something, the neuron in the network will work together .
+
+# Implementation of Neural Networks.
+
+In this case, the neural network if you was split the network, in tpo level, each level contain a floor and ceiling and conector in between.
+The ceiling of one level is the floor of the next level.
+
+Using classes we can implement a level of the first neural network, which will have a layer of input Neurons and output Neurons. There value will not necessarily match so these will be parameter in the level class. we would define the actual neurons in an array of value for both input , output and also one for the biases. Each output neuron has a bias, a value above in which it fires. 
+
+The sensor will provide the value for the input neurons, and will be connected to the output neuron via what is called weights, the weight have provided with a value between -1 and 1( postive and Negative).
