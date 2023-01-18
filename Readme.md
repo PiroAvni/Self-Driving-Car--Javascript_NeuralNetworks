@@ -31,4 +31,7 @@ The ceiling of one level is the floor of the next level.
 
 Using classes we can implement a level of the first neural network, which will have a layer of input Neurons and output Neurons. There value will not necessarily match so these will be parameter in the level class. we would define the actual neurons in an array of value for both input , output and also one for the biases. Each output neuron has a bias, a value above in which it fires. 
 
-The sensor will provide the value for the input neurons, and will be connected to the output neuron via what is called weights, the weight have provided with a value between -1 and 1( postive and Negative).
+The sensor will provide the value for the input neurons, and will be connected to the output neuron via what is called weights, the weights provided with a value between -1 and 1( postive and Negative) and will iterate through input and will contain an array size of the output. (For each input node will have an output count of connections).
+
+The output will be determined by the resulting sum which is provided, between the input(senor) and the weights and compared to the output bias which in return determins the Car behaviour, however we will need to still training the behaviour and the behaviour will be stored in local memory.
+
